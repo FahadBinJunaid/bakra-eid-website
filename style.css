@@ -1,3 +1,10 @@
 body {
     background-color: burlywood;
 }
+
+li {
+    border: 10px solid black;
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
