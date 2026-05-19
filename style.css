@@ -1,10 +1,231 @@
-body {
-    background-color: burlywood;
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+    align-items: center;
+    background-color: #1B4332;
+    padding: 0px 50px;
+    border-radius: 20px;
 }
 
-li {
-    border: 10px solid black;
-    display: inline;
-    margin: 5px;
-    padding: 5px;
+nav .logo a{
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #E9C46A; 
+}
+
+nav .logo a:hover {
+    color: #E9C46A;
+}
+
+
+main .hero-content{
+     margin: 200px;
+     text-align: center;
+}
+
+.homepage {
+    height: calc(100vh - 80px); /* Aapki screen ke mutabiq adjustment */
+    /* Proper Islamic Architecture Background URL */
+    background-image: linear-gradient(rgba(27, 67, 50, 0.75), rgba(27, 67, 50, 0.75)), 
+                      url('homepage.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.hero-content .btn {
+    color: #1B4332;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #E9C46A;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #dfb549;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1B4332; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.8; 
+    margin-top: 300px; 
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* About page */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 60px 8%; 
+}
+
+.about-text .main-heading {
+    font-size: 36px;
+    color: #1B4332; 
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left; 
+    text-decoration: underline;
+}
+
+.about-text {
+    width: 55%; 
+}
+
+.about-text p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+.about-image {
+    width: 40%; 
+    transition: transform 0.2s ease 
+}
+
+.about-image img {
+    width: 100%; 
+    height: auto;
+    border-radius: 15px; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); 
+    border: 4px solid #ffffff;
+}
+
+.about-image:hover {
+    transform: scale(1.08);
+}
+
+.aboutpage {
+    background-color: #ffffff71;
+}
+
+.aboutfooter {
+     background-color: #1B4332; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.8; 
+    margin-top: 40px; 
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.aboutfooter p  {
+    margin: 5px 0;
+}
+
+.gallery-text{
+    text-align: center;
+}
+.main-card {
+    margin: 20px;
+    padding: 40px;
+    gap: 50px;
+}
+
+
+.card {
+    border: 2px solid black;
+    box-shadow: 10px 20px 40px burlywood;
+    display: inline-block;
+    transition: 0.3ms;
+}
+.card:hover {
+    transform: scale(1.06);
+}
+.gallery-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1B4332; 
+    margin-bottom: 12px;
+}
+
+
+
+.gallery {
+     background-color: #1B4332; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.8; 
+    margin-top: 40px; 
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.gallery p  {
+    margin: 5px 0;
+}
+
+
+ /* donation */
+
+
+.donation {
+     background-color: #1B4332; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.8; 
+    margin-top: 40px; 
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.donation p  {
+    margin: 5px 0;
 }
